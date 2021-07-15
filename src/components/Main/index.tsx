@@ -27,7 +27,13 @@ const Main = ({ cards, setCards }: Props) => {
           <Card key={v4()} suit={suit} rank={rank} />
         ))}
       </div>
-      <button onClick={shuffleCards}>Reshuffle</button>
+      <button
+        className="main-reshuffle-button"
+        onClick={shuffleCards}
+        title="Reshuffle your cards"
+      >
+        Reshuffle
+      </button>
       <h3>Your Other Cards:</h3>
       <div className="main-mini-cards-wrapper">
         {cards.slice(4).map(({ suit, rank }) => (
