@@ -4,7 +4,7 @@ import { v4 } from 'uuid';
 
 const createData = (): CardType[] => {
   const res = [];
-  const suits = [Suit.C, Suit.C, Suit.D, Suit.H];
+  const suits = [Suit.S, Suit.C, Suit.D, Suit.H];
   const ranks = ['A', '2', '3', '4', '5', '6', '7', '8', '9', 'J', 'Q', 'K'];
 
   for (const suit of suits) {
