@@ -6,11 +6,12 @@ export const shuffle = (cards: CardType[]): CardType[] => {
   const len = cards.length;
 
   for (let i = 0; i < len; i++) {
-    const j = generateRandomInt(len);
+    let curr = cards[i];
+    const newPos = generateRandomInt(len);
 
-    const temp = cards[i];
-    cards[i] = cards[j];
-    cards[j] = temp;
+    const temp = curr;
+    curr = cards[newPos];
+    cards[newPos] = temp;
   }
 
   return cards;
