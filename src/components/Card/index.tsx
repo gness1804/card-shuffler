@@ -10,6 +10,7 @@ const Card = ({ suit, rank }: Props) => {
   return (
     <div>
       <p>{rank}</p>
+      <p>{suit}</p>
     </div>
   );
 };
