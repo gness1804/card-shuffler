@@ -1,3 +1,14 @@
 .App {
   text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.App-header {
+  margin-bottom: 2rem;
+}
+
+.App-header-h1 {
+  font-size: 1.75rem;
 }

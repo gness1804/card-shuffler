@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Card Shuffler</h1>
+        <h1 className="App-header-h1">Card Shuffler</h1>
       </header>
       <Main cards={cards} setCards={setCards} />
     </div>

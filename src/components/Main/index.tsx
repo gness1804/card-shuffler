@@ -20,7 +20,7 @@ const Main = ({ cards, setCards }: Props) => {
 
   return (
     <div className="main">
-      <h2>Your Cards:</h2>
+      <h2 className="main-h2">Your Cards:</h2>
       <div className="main-cards-wrapper">
         {cards.slice(0, 4).map(({ suit, rank }) => (
           <Card key={v4()} suit={suit} rank={rank} />
