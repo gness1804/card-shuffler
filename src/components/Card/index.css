@@ -27,6 +27,7 @@
   .card {
     margin-bottom: 0;
     margin-right: 1rem;
+    width: 15%;
   }
 
   .card:last-child {
