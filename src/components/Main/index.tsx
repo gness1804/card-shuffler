@@ -13,6 +13,8 @@ const Main = ({ cards, setCards }: Props) => {
   const shuffleCards = (): void => {
     const newCards = shuffle(cards);
     setCards([...newCards]);
+    //eslint-disable-next-line no-console
+    console.info('Your other cards:', cards.slice(4));
   };
 
   return (
