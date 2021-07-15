@@ -1,6 +1,7 @@
 import React, { Dispatch, SetStateAction } from 'react';
 import { v4 } from 'uuid';
 import Card from '../Card';
+import MiniCard from '../MiniCard';
 import { CardType } from '../../models/card';
 import { shuffle } from '../../utils/shuffle';
 import './index.css';
@@ -27,6 +28,12 @@ const Main = ({ cards, setCards }: Props) => {
         ))}
       </div>
       <button onClick={shuffleCards}>Reshuffle</button>
+      <h3>Your Other Cards:</h3>
+      <div className="main-mini-cards-wrapper">
+        {cards.slice(4).map(({ suit, rank }) => (
+          <MiniCard key={v4()} suit={suit} rank={rank} />
+        ))}
+      </div>
     </div>
   );
 };
