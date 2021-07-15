@@ -6,14 +6,6 @@ describe('shuffle', () => {
   it('should return a string of the same length as the input string', () => {
     const res = shuffle(cards);
     expect(res.length).toEqual(cards.length);
-
-    /*eslint-disable-next-line no-console */
-    console.info('Your shuffled cards:');
-
-    for (const card of res) {
-      /*eslint-disable-next-line no-console */
-      console.info({ suit: card.suit, rank: card.rank });
-    }
   });
 
   it('should return a result containing no duplicates', () => {
