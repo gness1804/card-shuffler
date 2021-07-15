@@ -5,7 +5,7 @@ export enum Suit {
   H = 'Hearts',
 }
 
-export interface Card {
+export interface CardType {
   id: string;
   suit: Suit;
   rank: string;

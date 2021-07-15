@@ -1,6 +1,6 @@
-import { Card, Suit } from '../models/card';
+import { CardType, Suit } from '../models/card';
 
-export const cards: Card[] = [
+export const cards: CardType[] = [
   {
     id: '1',
     suit: Suit.S,

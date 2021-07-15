@@ -1,7 +1,7 @@
 import React, { Dispatch, SetStateAction } from 'react';
 import { v4 } from 'uuid';
 import Card from '../Card';
-import { Card as CardType } from '../../models/card';
+import { CardType } from '../../models/card';
 import { shuffle } from '../../utils/shuffle';
 
 interface Props {
