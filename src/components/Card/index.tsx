@@ -22,7 +22,7 @@ const Card = ({ suit, rank }: Props) => {
   return (
     <div className="card">
       <p className="card-rank">{rank}</p>
-      <img src={suitMapper[suit]} alt="logo" />
+      <img className="card-suit" src={suitMapper[suit]} alt={suit} />
     </div>
   );
 };
