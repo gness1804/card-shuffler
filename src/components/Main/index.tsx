@@ -3,6 +3,7 @@ import { v4 } from 'uuid';
 import Card from '../Card';
 import { CardType } from '../../models/card';
 import { shuffle } from '../../utils/shuffle';
+import './index.css';
 
 interface Props {
   cards: CardType[];
@@ -20,10 +21,12 @@ const Main = ({ cards, setCards }: Props) => {
   return (
     <div className="main">
       <h2>Your Cards:</h2>
-      {cards.slice(0, 4).map(({ suit, rank }) => (
-        <Card key={v4()} suit={suit} rank={rank} />
-      ))}
-      <button onClick={shuffleCards}>Reshuffle</button>
+      <div className="main-cards-wrapper">
+        {cards.slice(0, 4).map(({ suit, rank }) => (
+          <Card key={v4()} suit={suit} rank={rank} />
+        ))}
+      </div>
+      <button onClick={shuffleCards}>Shuffle</button>
     </div>
   );
 };

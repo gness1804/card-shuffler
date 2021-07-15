@@ -1,5 +1,6 @@
 import React from 'react';
 import { Suit } from '../../models/card';
+import './index.css';
 
 interface Props {
   suit: Suit;
@@ -8,7 +9,7 @@ interface Props {
 
 const Card = ({ suit, rank }: Props) => {
   return (
-    <div>
+    <div className="card">
       <p>{rank}</p>
       <p>{suit}</p>
     </div>
