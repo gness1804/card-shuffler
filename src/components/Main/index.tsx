@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { cards as defaultCards } from '../../data/cards';
+import { v4 } from 'uuid';
 import Card from '../Card';
 
 const Main = () => {
@@ -9,7 +10,7 @@ const Main = () => {
     <div className="main">
       <h2>Your Cards:</h2>
       {cards.slice(0, 4).map(({ suit, rank }) => (
-        <Card suit={suit} rank={rank} />
+        <Card key={v4()} suit={suit} rank={rank} />
       ))}
     </div>
   );
