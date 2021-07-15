@@ -1,3 +1,7 @@
+To keep eslint errors from crashing the app on localhost, add the following to a .env file:
+`ESLINT_NO_DEV_ERRORS=true`
+For more info see https://stackoverflow.com/questions/64518226/my-create-react-app-is-failing-to-compile-due-to-eslint-error
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
