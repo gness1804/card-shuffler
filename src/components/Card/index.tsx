@@ -21,7 +21,7 @@ const suitMapper = {
 const Card = ({ suit, rank }: Props) => {
   return (
     <div className="card">
-      <p>{rank}</p>
+      <p className="card-rank">{rank}</p>
       <img src={suitMapper[suit]} alt="logo" />
     </div>
   );

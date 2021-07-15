@@ -9,6 +9,10 @@
   margin-bottom: 0;
 }
 
+.card-rank {
+  font-size: 24px;
+}
+
 @media (min-width: 768px) {
   .card {
     margin-bottom: 0;

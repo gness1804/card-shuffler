@@ -1,5 +1,6 @@
 import { CardType, Suit } from '../models/card';
 import { CardClass } from '../models/CardClass';
+import { shuffle } from '../utils/shuffle';
 import { v4 } from 'uuid';
 
 const createData = (): CardType[] => {
@@ -13,7 +14,7 @@ const createData = (): CardType[] => {
       res.push(newCard);
     }
   }
-  return res;
+  return shuffle(res);
 };
 
 export const cards: CardType[] = createData();

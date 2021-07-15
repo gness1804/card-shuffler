@@ -26,7 +26,7 @@ const Main = ({ cards, setCards }: Props) => {
           <Card key={v4()} suit={suit} rank={rank} />
         ))}
       </div>
-      <button onClick={shuffleCards}>Shuffle</button>
+      <button onClick={shuffleCards}>Reshuffle</button>
     </div>
   );
 };
