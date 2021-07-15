@@ -121,6 +121,6 @@ export const cards: Card[] = [
     suit: Suit.C,
     rank: 'K',
   },
-]
+];
 
 // TODO: finish

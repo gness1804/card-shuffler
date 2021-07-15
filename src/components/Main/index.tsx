@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { cards as defaultCards } from "../../data/cards";
-import Card from "../Card";
+import React, { useState } from 'react';
+import { cards as defaultCards } from '../../data/cards';
+import Card from '../Card';
 
 const Main = () => {
   const [cards, setCards] = useState(defaultCards);

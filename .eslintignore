@@ -1,3 +1,9 @@
+# don't ever lint node_modules
+node_modules
+# don't lint build output (make sure it's set to your correct build folder name)
+build
+# don't lint nyc coverage output
+coverage
 # editor-specific files
 .vscode/
 .idea/
@@ -9,7 +15,6 @@ node_modules
 *.config.js
 .babelrc
 package.json
-tsconfig.json
 # markdown files
 README.md
 CHANGELOG.md
