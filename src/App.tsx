@@ -5,7 +5,6 @@ import './reset.css';
 import './App.css';
 
 function App() {
-  // TODO: shuffle on start
   const [cards, setCards] = useState(defaultCards);
 
   return (
