@@ -15,4 +15,11 @@ describe('shuffle', () => {
       console.info({ suit: card.suit, rank: card.rank });
     }
   });
+
+  it('should return a result containing no duplicates', () => {
+    const res = shuffle(cards);
+    const set = new Set(res);
+
+    expect(set.size).toEqual(res.length);
+  });
 });
