@@ -17,11 +17,12 @@
   border-radius: 5px;
   border: 2px solid #2b2a2a;
   padding: 0.5rem;
+  font-weight: 700;
   box-shadow: 2px 1px 1px 1px rgba(66,66,66,0.55);
 }
 
 .main-reshuffle-button:hover {
-  background-color: #424242;
+  background-color: #e2deda;
 }
 
 .main-mini-cards-wrapper {
