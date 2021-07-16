@@ -31,7 +31,7 @@ There are several tests of the app's basic functionality. To run all the tests, 
 
 <br />
 
-## Config notes:
+## Config and code sanitation notes:
 This app uses [eslint](https://eslint.org/) for JavaScript code sanitation and [prettier](https://prettier.io/) for code formatting. The command `yarn lint` will run both against the code in the project. `yarn fix` will fix all the issues that can be fixed automatically.
 
 **NOTE**: To keep eslint errors from crashing the app on localhost, add the following to a .env file:
