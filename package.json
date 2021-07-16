@@ -1,6 +1,7 @@
 {
   "name": "card-shuffler",
   "version": "1.0.0",
+  "description": "Shuffles a virtual deck of cards.",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
