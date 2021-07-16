@@ -1,5 +1,7 @@
 # Card Shuffler
 
+![screenshot](https://github.com/gness1804/card-shuffler/blob/master/src/assets/demo.png)
+
 > Shuffles a virtual deck of cards.
 
 <br />
